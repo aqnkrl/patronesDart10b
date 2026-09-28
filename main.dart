@@ -1,18 +1,17 @@
 import 'configuracion.dart';
 
-void main(){
-    var pantallaInicio = Configuracion('es');
-    var pantallaPerfil = Configuracion('es');
+void main() {
+  var pantallaInicio = Configuracion();
+  var pantallaPerfil = Configuracion();
 
-    print('Idioma pantalla de inicio: ${pantallaInicio.idioma}');
-    print('Idioma pantalla de perfil: ${pantallaPerfil.idioma}');
+  print('Idioma pantalla de inicio: ${pantallaInicio.idioma}');
+  print('Idioma pantalla de perfil: ${pantallaPerfil.idioma}');
 
-    pantallaInicio.idioma='en';
+  pantallaInicio.idioma = 'en';
 
-    print('Idioma pantalla de inicio: ${pantallaInicio.idioma}');
-    print('Idioma pantalla de perfil: ${pantallaPerfil.idioma}');
+  print('Idioma pantalla de inicio: ${pantallaInicio.idioma}');
+  print('Idioma pantalla de perfil: ${pantallaPerfil.idioma}');
 
-    //Comprobar si son instansias iguales o diferentes
-    print(identical(pantallaInicio, pantallaPerfil)); //false
-
+  //Comprobar si son instansias iguales o diferentes
+  print(identical(pantallaInicio, pantallaPerfil)); //false
 }
