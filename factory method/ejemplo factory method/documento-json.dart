@@ -5,6 +5,6 @@ class DocumentoJson implements Documento {
   @override
   String generar(List<int> calificaciones) {
     // Implementación específica para documento JSON
-    return jsonEncode({'calificaciones': calificaciones});
+    return jsonEncode({'formato: json -> calificaciones': calificaciones});
   }
 }
